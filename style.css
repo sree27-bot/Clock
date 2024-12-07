@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #2c3e50, #3498db);
+    color: white;
+    animation: backgroundFade 10s infinite;
+  }
+  
+  #clock-container {
+    text-align: center;
+  }
+  
+  #clock {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  #date {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  #analog-clock {
+    margin-top: 20px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background: #333;
+  }
+  
+  body.light-mode {
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    color: black;
+  }
+  
+  body.light-mode button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  @keyframes backgroundFade {
+    0% { background: #2c3e50; }
+    25% {  background:darkseagreen }
+    50% { background: #3498db; }
+    75% { background: darksalmon;}
+    100% { background: #2c3e50; }
+  }
+  
